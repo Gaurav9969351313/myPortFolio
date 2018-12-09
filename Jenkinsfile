@@ -12,5 +12,10 @@ pipeline {
         sh 'npm install'
       }
     }
+    stage('create dir') {
+      steps {
+        sh 'ng build --prod'
+      }
+    }
   }
 }
