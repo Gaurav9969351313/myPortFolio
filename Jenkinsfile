@@ -14,7 +14,8 @@ pipeline {
     }
     stage('create dir') {
       steps {
-        sh 'ng build --prod'
+        sh '''cd myPortFolio_master
+ng build --prod'''
       }
     }
   }
